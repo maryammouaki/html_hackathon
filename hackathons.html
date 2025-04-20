@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathons | Hackathon News</title>
+    <!-- Changed Title -->
+    <!-- Linking Unicons For Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="sidebar-hidden">
+    <!-- Assuming default state -->
+    <div class="container">
+      <!-- Header / Navbar (Copied from index.html) -->
+      <header>
+        <nav class="navbar">
+          <div class="nav-section nav-left">
+            <button class="nav-button menu-button">
+              <i class="uil uil-bars"></i>
+            </button>
+            <a href="#" class="nav-logo">
+              <img
+                src="images/hackathon_logo.png"
+                alt="Logo"
+                class="logo-image"
+              />
+              <h2 class="logo-text">Hackathon News</h2>
+            </a>
+          </div>
+
+          <div class="nav-section">
+            <button
+              class="nav-button search-back-button"
+              id="search-back-button"
+            >
+              <i class="uil uil-arrow-left"></i>
+            </button>
+          </div>
+
+          <div class="nav-section nav-center">
+            <form action="#" class="search-form">
+              <input
+                type="search"
+                placeholder="Search"
+                class="search-input"
+                required
+              />
+              <button class="nav-button search-button">
+                <i class="uil uil-search"></i>
+              </button>
+            </form>
+            <button class="nav-button mic-button">
+              <i class="uil uil-microphone"></i>
+            </button>
+          </div>
+
+          <div class="nav-section nav-right">
+            <button class="nav-button search-button" id="search-button">
+              <i class="uil uil-search"></i>
+            </button>
+            <!-- Removed theme button -->
+            <!-- <img src="images/hackathon_logo.png" alt="User Image" class="user-image" /> -->
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Layout -->
+      <main class="main-layout">
+        <div class="screen-overlay"></div>
+
+        <!-- Sidebar (Copied from index.html, links updated) -->
+        <aside class="sidebar">
+          <div class="nav-section nav-left">
+            <button class="nav-button menu-button">
+              <i class="uil uil-bars"></i>
+            </button>
+            <a href="#" class="nav-logo">
+              <img src="images/logo.png" alt="Logo" class="logo-image" />
+              <h2 class="logo-text">CnTube</h2>
+              <!-- Might need update -->
+            </a>
+          </div>
+
+          <div class="links-container">
+            <div class="link-section">
+              <a href="index.html" class="link-item">
+                <i class="uil uil-estate"></i> Home
+              </a>
+              <a href="hackathons.html" class="link-item">
+                <i class="uil uil-trophy"></i> Hackathons
+              </a>
+              <a href="blogs.html" class="link-item">
+                <i class="uil uil-blogger-alt"></i> Blogs
+              </a>
+              <a href="resources.html" class="link-item">
+                <i class="uil uil-books"></i> Resources
+              </a>
+              <a href="formation.html" class="link-item">
+                <i class="uil uil-graduation-cap"></i> Formation
+              </a>
+              <a href="community.html" class="link-item">
+                <i class="uil uil-users-alt"></i> Community
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="content-wrapper">
+          <!-- Category List (Updated for Hackathons) -->
+          <div class="category-list">
+            <button class="category-button active">All</button>
+            <button class="category-button">Web Dev</button>
+            <button class="category-button">AI/ML</button>
+            <button class="category-button">Blockchain</button>
+            <button class="category-button">Game Dev</button>
+            <button class="category-button">Mobile</button>
+            <button class="category-button">Cloud</button>
+            <button class="category-button">Cybersecurity</button>
+            <button class="category-button">FinTech</button>
+            <button class="category-button">Social Good</button>
+            <button class="category-button">Beginner Friendly</button>
+            <button class="category-button">Hardware</button>
+          </div>
+
+          <!-- Video List (Updated for Upcoming Hackathons) -->
+          <div class="video-list">
+            <a href="#" class="video-card">
+              <div class="thumbnail-container">
+                <!-- Keep existing thumbnail -->
+                <img
+                  src="https://images.unsplash.com/photo-1669023414162-5bb06bbff0ec?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Hackathon Thumbnail"
+                  class="thumbnail"
+                />
+                <p class="duration">Online | $10k Prize</p>
+                <!-- Updated duration -->
+              </div>
+              <div class="video-info">
+                <!-- Use site logo -->
+                <img
+                  src="images/hackathon_logo.png"
+                  alt="Organizer Logo"
+                  class="icon"
+                />
+                <div class="video-details">
+                  <h2 class="title">AI for Social Good Hackathon 2025</h2>
+                  <!-- Updated title -->
+                  <p class="channel-name">Tech for Humanity Org</p>
+                  <!-- Updated organizer -->
+                  <p class="views">Starts: May 15, 2025</p>
+                  <!-- Updated details -->
+                </div>
+              </div>
+            </a>
+            <a href="#" class="video-card">
+              <div class="thumbnail-container">
+                <!-- Keep existing thumbnail -->
+                <img
+                  src="https://images.unsplash.com/photo-1738736637589-5d8007bedbbc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Hackathon Thumbnail"
+                  class="thumbnail"
+                />
+                <p class="duration">Hybrid (NYC) | $25k Prize</p>
+                <!-- Updated duration -->
+              </div>
+              <div class="video-info">
+                <!-- Use site logo -->
+                <img
+                  src="images/hackathon_logo.png"
+                  alt="Organizer Logo"
+                  class="icon"
+                />
+                <div class="video-details">
+                  <h2 class="title">Future of FinTech Hackathon</h2>
+                  <!-- Updated title -->
+                  <p class="channel-name">DevBank & FinInnovate</p>
+                  <!-- Updated organizer -->
+                  <p class="views">Starts: June 1, 2025</p>
+                  <!-- Updated details -->
+                </div>
+              </div>
+            </a>
+            <a href="#" class="video-card">
+              <div class="thumbnail-container">
+                <!-- Keep existing thumbnail -->
+                <img
+                  src="https://i.ytimg.com/vi/YEloDYy3DTg/maxresdefault.jpg"
+                  alt="Hackathon Thumbnail"
+                  class="thumbnail"
+                />
+                <p class="duration">Online | Beginner Friendly</p>
+                <!-- Updated duration -->
+              </div>
+              <div class="video-info">
+                <!-- Use site logo -->
+                <img
+                  src="images/hackathon_logo.png"
+                  alt="Organizer Logo"
+                  class="icon"
+                />
+                <div class="video-details">
+                  <h2 class="title">Web Dev Wizards Challenge (Summer '25)</h2>
+                  <!-- Updated title -->
+                  <p class="channel-name">The Coding Collective</p>
+                  <!-- Updated organizer -->
+                  <p class="views">Starts: July 10, 2025</p>
+                  <!-- Updated details -->
+                </div>
+              </div>
+            </a>
+            <a href="#" class="video-card">
+              <div class="thumbnail-container">
+                <!-- Keep existing thumbnail -->
+                <img
+                  src="https://images.unsplash.com/photo-1678225867994-e7a5b071ebfd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Hackathon Thumbnail"
+                  class="thumbnail"
+                />
+                <p class="duration">In-Person (SF) | Hardware Focus</p>
+                <!-- Updated duration -->
+              </div>
+              <div class="video-info">
+                <!-- Use site logo -->
+                <img
+                  src="images/hackathon_logo.png"
+                  alt="Organizer Logo"
+                  class="icon"
+                />
+                <div class="video-details">
+                  <h2 class="title">Build the Future: IoT & Robotics Hack</h2>
+                  <!-- Updated title -->
+                  <p class="channel-name">Maker Labs Inc.</p>
+                  <!-- Updated organizer -->
+                  <p class="views">Starts: August 20, 2025</p>
+                  <!-- Updated details -->
+                </div>
+              </div>
+            </a>
+            <a href="#" class="video-card">
+              <div class="thumbnail-container">
+                <!-- Keep existing thumbnail -->
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1682125220008-006e43a6896a?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Hackathon Thumbnail"
+                  class="thumbnail"
+                />
+                <p class="duration">Online | Game Dev Theme</p>
+                <!-- Updated duration -->
+              </div>
+              <div class="video-info">
+                <!-- Use site logo -->
+                <img
+                  src="images/hackathon_logo.png"
+                  alt="Organizer Logo"
+                  class="icon"
+                />
+                <div class="video-details">
+                  <h2 class="title">Indie Game Dev Showdown 2025</h2>
+                  <!-- Updated title -->
+                  <p class="channel-name">Pixel Pioneers</p>
+                  <!-- Updated organizer -->
+                  <p class="views">Starts: September 5, 2025</p>
+                  <!-- Updated details -->
+                </div>
+              </div>
+            </a>
+            <a href="#" class="video-card">
+              <div class="thumbnail-container">
+                <!-- Keep existing thumbnail -->
+                <img
+                  src="https://images.unsplash.com/photo-1642356692870-0838c799613e?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Hackathon Thumbnail"
+                  class="thumbnail"
+                />
+                <p class="duration">Online | Blockchain Focus</p>
+                <!-- Updated duration -->
+              </div>
+              <div class="video-info">
+                <!-- Use site logo -->
+                <img
+                  src="images/hackathon_logo.png"
+                  alt="Organizer Logo"
+                  class="icon"
+                />
+                <div class="video-details">
+                  <h2 class="title">Decentralize Everything Hackathon</h2>
+                  <!-- Updated title -->
+                  <p class="channel-name">Web3 Builders Guild</p>
+                  <!-- Updated organizer -->
+                  <p class="views">Starts: October 1, 2025</p>
+                  <!-- Updated details -->
+                </div>
+              </div>
+            </a>
+            <!-- Add more upcoming hackathon cards as needed -->
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>

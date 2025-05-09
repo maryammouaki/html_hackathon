@@ -301,6 +301,29 @@ body.sidebar-hidden .main-layout .sidebar {
   transform: scale(1.05); /* Scale effect for category buttons */
 }
 
+/* Domain Buttons Styling */
+.category-button {
+  padding: 10px 20px;
+  background-color: #6c757d; /* Gray color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #6f42c1; /* Purple color */
+  transform: scale(1.1); /* Pop animation */
+}
+
+/* Active Button Styling */
+.category-button.active {
+  background-color: #6f42c1; /* Purple color */
+  color: white;
+}
+
 .content-wrapper .video-list {
   display: grid;
   gap: 16px;
@@ -1194,7 +1217,6 @@ body.sidebar-hidden .main-layout .sidebar {
     border-radius: 8px;
     padding: 12px;
   }
-}
 
 @media (max-width: 576px) {
   .event-footer {
@@ -1206,4 +1228,228 @@ body.sidebar-hidden .main-layout .sidebar {
   .topic-cards, .events-grid {
     grid-template-columns: 1fr;
   }
+}
+/* Style for the domain buttons */
+.domain-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.domain-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.domain-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the formation blocks */
+.formation-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.formation-block {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  background-color: #f9f9f9;
+}
+
+.formation-block.active {
+  display: flex; /* Show active blocks */
+}
+
+.formation-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.formation-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.formation-item a:hover {
+  text-decoration: underline;
+}
+
+/* Formation Item Animation */
+.formation-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formation-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.category-button {
+  padding: 10px 20px;
+  background-color: #6c757d; /* Gray color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #6f42c1; /* Purple color */
+  transform: scale(1.1); /* Pop animation */
+}
+
+/* Active Button Styling */
+.category-button.active {
+  background-color: #6f42c1; /* Purple color */
+  color: white;
+}
+
+/* Formation List */
+.formation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add spacing between items */
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.formation-item {
+  width: 300px;
+  border: 1px solid #2D2D2D;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #2D2D2D;
+}
+
+.formation-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.formation-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: white; /* Make the formation name white */
+}
+
+.formation-item p {
+  font-size: 14px;
+  color: white; /* Make the description white */
+}
+  
+.formation-item .btn {
+  display: inline-flex; /* Use flex to align text and logo */
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Add spacing between text and logo */
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #6f42c1;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.formation-item .btn:hover {
+  background-color: #9b00b3;
+}
+
+.formation-item .btn img {
+  display: none; /* No longer needed */
+}
+
+/* Resource Section Styling */
+.resource-section {
+  margin-bottom: 40px;
+}
+
+.resource-section h2 {
+  font-size: 1.8rem;
+  color: #6f42c1;
+  margin-bottom: 20px;
+}
+
+.resource-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.resource-item {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #2D2D2D; /* Set background to dark gray */
+  text-align: center;
+  position: relative; /* For positioning the profile picture */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  color: white; /* Set text color to white */
+}
+
+.resource-item img.profile-picture {
+  width: 50px; /* Set size for the profile picture */
+  height: 50px;
+  border-radius: 50%; /* Make the image circular */
+  position: absolute;
+  top: -25px; /* Position it above the block */
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #ddd; /* Add a border around the profile picture */
+  background-color: white; /* Add a white background */
+}
+
+.resource-item h3 {
+  font-size: 1.2rem;
+  margin: 20px 0 10px; /* Add space for the profile picture */
+  color: white; /* Ensure the heading text is white */
+}
+
+.resource-item p {
+  font-size: 0.9rem;
+  color: white; /* Ensure the paragraph text is white */
+  margin-bottom: 15px;
+}
+
+.resource-item .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #6f42c1;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.resource-item .btn:hover {
+  background-color: #9b00b3;
 }

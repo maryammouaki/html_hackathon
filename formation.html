@@ -40,7 +40,7 @@
             <form action="#" class="search-form">
               <input
                 type="search"
-                placeholder="Search"
+                placeholder="Search for formations"
                 class="search-input"
                 required
               />
@@ -92,7 +92,7 @@
               <a href="resources.html" class="link-item">
                 <i class="uil uil-books"></i> Resources
               </a>
-              <a href="formation.html" class="link-item">
+              <a href="formation.html" class="link-item active">
                 <i class="uil uil-graduation-cap"></i> Formation
               </a>
               <a href="community.html" class="link-item">
@@ -103,8 +103,77 @@
         </aside>
 
         <div class="content-wrapper">
-          <h1>Formation Page</h1>
-          <!-- Add formation content here -->
+
+          <!-- Formation Categories -->
+          <div class="categories">
+            <button class="category-button" data-category="all">
+              All
+            </button>
+            <button class="category-button" data-category="web-development">
+              Web Development
+            </button>
+            <button class="category-button" data-category="data-science">
+              Data Science
+            </button>
+            <button class="category-button" data-category="cyber-security">
+              Cyber Security
+            </button>
+            <button class="category-button" data-category="ai">
+              Artificial Intelligence
+            </button>
+            <button class="category-button" data-category="cloud-computing">
+              Cloud Computing
+            </button>
+          </div>
+
+          <!-- Formation List -->
+          <div class="formation-list">
+            <!-- Web Development -->
+            <div class="formation-item" data-category="web-development">
+              <img src="https://i.ytimg.com/vi/ZxKM3DCV2kE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDSSimI3ICqOUAR6VaENfDsqw56nA" alt="Web Development Formation" />
+              <h3>Web Development Bootcamp</h3>
+              <p>Learn the fundamentals of web development in this comprehensive bootcamp.</p>
+              <a href="web_dev_formation.html" class="btn">Start Learning</a>
+            </div>
+            <div class="formation-item" data-category="web-development">
+              <img src="https://d2ms8rpfqc4h24.cloudfront.net/Guide_to_Full_Stack_Development_000eb0b2d0.jpg" alt="Web Development Formation" />
+              <h3>Web Stack Full Course</h3>
+              <p>Learn HTML+CSS+JS in this comprehensive Course.</p>
+              <a href="web_dev_formation.html" class="btn">Start Learning</a>
+            </div>
+
+            <!-- Data Science -->
+            <div class="formation-item" data-category="data-science">
+              <img src="https://feg.univ-amu.fr/sites/default/files/styles/actu_full/public/media-images/Visuel-DESU-2024.jpg?itok=MvRpDhgi" alt="Data Science Formation" />
+              <h3>Data Science Masterclass</h3>
+              <p>Master data analysis, visualization, and machine learning techniques.</p>
+              <a href="data_science_formation.html" class="btn">Start Learning</a>
+            </div>
+
+            <!-- Cyber Security -->
+            <div class="formation-item" data-category="cyber-security">
+              <img src="https://utimaco.com/sites/default/files/styles/ut_stage_l_jpeg/public/2022-09/The_importance_of_cybersecurity.jpg.webp?itok=gfYRHwBl" alt="Cyber Security Formation" />
+              <h3>Cyber Security Essentials</h3>
+              <p>Understand the basics of securing systems and protecting data.</p>
+              <a href="cyber_security_formation.html" class="btn">Start Learning</a>
+            </div>
+
+            <!-- Artificial Intelligence -->
+            <div class="formation-item" data-category="ai">
+              <img src="https://img-c.udemycdn.com/course/240x135/6517077_b950_5.jpg" alt="Artificial Intelligence Formation" />
+              <h3>AI for Beginners</h3>
+              <p>Explore the basics of Artificial Intelligence and its applications.</p>
+              <a href="ai_formation.html" class="btn">Start Learning</a>
+            </div>
+
+            <!-- Cloud Computing -->
+            <div class="formation-item" data-category="cloud-computing">
+              <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/06/What-Is-Cloud-Computing.jpg" alt="Cloud Computing Formation" />
+              <h3>Cloud Computing Fundamentals</h3>
+              <p>Learn how to build and manage cloud-based solutions.</p>
+              <a href="cloud_computing_formation.html" class="btn">Start Learning</a>
+            </div>
+          </div>
         </div>
       </main>
     </div>

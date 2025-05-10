@@ -56,6 +56,13 @@
             <button class="nav-button search-button" id="search-button">
               <i class="uil uil-search"></i>
             </button>
+            <a href="#" class="profile-link">
+              <img
+                src="images/profiles/profile-sarah.jpg"
+                alt="Profile"
+                class="profile-image"
+              />
+            </a>
           </div>
         </nav>
       </header>
@@ -103,18 +110,504 @@
         </aside>
 
         <div class="content-wrapper">
-          <section class="community-hero">
-            <h1>Join Our Community</h1>
-            <p>Connect with fellow developers, designers, and tech enthusiasts</p>
-          </section>
-          
-          <div class="community-content">
-            <!-- Community content will go here -->
-            <p>This page is under construction. Check back soon for community features!</p>
+          <div class="community-layout">
+            <div class="community-left">
+              <div class="create-post-card">
+                <div class="post-input-container">
+                  <img
+                    src="images/profiles/profile-sarah.jpg"
+                    alt="Profile"
+                    class="post-profile-img"
+                  />
+                  <div class="post-input-wrapper">
+                    <input
+                      type="text"
+                      placeholder="What's on your mind?"
+                      class="post-input"
+                      id="postInput"
+                    />
+                  </div>
+                </div>
+                <div class="post-actions">
+                  <button class="post-action-btn">
+                    <i class="uil uil-image"></i>
+                    <span>Image</span>
+                  </button>
+                  <button class="post-action-btn">
+                    <i class="uil uil-video"></i>
+                    <span>Video</span>
+                  </button>
+                  <button class="post-action-btn">
+                    <i class="uil uil-link"></i>
+                    <span>Link</span>
+                  </button>
+                  <button class="post-action-btn post-btn" id="createPostBtn">
+                    Post
+                  </button>
+                </div>
+              </div>
+
+              <div class="posts-container">
+                <div class="post-card">
+                  <div class="post-header">
+                    <img
+                      src="images/profiles/profile-sarah.jpg"
+                      alt="User"
+                      class="post-user-img"
+                    />
+                    <div class="post-info">
+                      <h4 class="post-author">Sarah Johnson</h4>
+                      <span class="post-time">2 hours ago</span>
+                    </div>
+                    <div class="post-menu">
+                      <button class="post-menu-btn">
+                        <i class="uil uil-ellipsis-h"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="post-content">
+                    <p>
+                      Just finished our project at the AI Hackathon! Our team
+                      created a machine learning model that predicts energy
+                      consumption patterns. So proud of what we accomplished in
+                      just 48 hours! 🚀 #AIHackathon #MachineLearning
+                    </p>
+                    <img
+                      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800"
+                      alt="Team working on project"
+                      class="post-image"
+                    />
+                  </div>
+                  <div class="post-stats">
+                    <div class="stat-item likes">
+                      <i class="uil uil-heart"></i>
+                      <span>124</span>
+                    </div>
+                    <div class="stat-item comments">
+                      <i class="uil uil-comment"></i>
+                      <span>18</span>
+                    </div>
+                    <div class="stat-item shares">
+                      <i class="uil uil-share"></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                  <div class="post-actions-bottom">
+                    <button class="post-reaction-btn like-btn">
+                      <i class="uil uil-heart"></i>
+                      <span>Like</span>
+                    </button>
+                    <button class="post-reaction-btn comment-btn">
+                      <i class="uil uil-comment"></i>
+                      <span>Comment</span>
+                    </button>
+                    <button class="post-reaction-btn share-btn">
+                      <i class="uil uil-share"></i>
+                      <span>Share</span>
+                    </button>
+                  </div>
+                  <div class="comments-section">
+                    <div class="comment-input-container">
+                      <img
+                        src="images/profiles/profile-sarah.jpg"
+                        alt="Profile"
+                        class="comment-profile-img"
+                      />
+                      <div class="comment-input-wrapper">
+                        <input
+                          type="text"
+                          placeholder="Write a comment..."
+                          class="comment-input"
+                        />
+                      </div>
+                    </div>
+                    <div class="comments-list">
+                      <div class="comment">
+                        <img
+                          src="images/profiles/default.png"
+                          alt="User"
+                          class="comment-user-img"
+                        />
+                        <div class="comment-content">
+                          <div class="comment-header">
+                            <h5>Michael Chen</h5>
+                            <span>1 hour ago</span>
+                          </div>
+                          <p>
+                            Amazing work! I'd love to hear more about how you
+                            approached the feature engineering.
+                          </p>
+                          <div class="comment-actions">
+                            <button class="comment-action-btn">Like</button>
+                            <button class="comment-action-btn">Reply</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comment">
+                        <img
+                          src="images/profiles/default.png"
+                          alt="User"
+                          class="comment-user-img"
+                        />
+                        <div class="comment-content">
+                          <div class="comment-header">
+                            <h5>Priya Sharma</h5>
+                            <span>30 minutes ago</span>
+                          </div>
+                          <p>
+                            Congrats on the achievement! Did you use TensorFlow
+                            or PyTorch for your model?
+                          </p>
+                          <div class="comment-actions">
+                            <button class="comment-action-btn">Like</button>
+                            <button class="comment-action-btn">Reply</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-card">
+                  <div class="post-header">
+                    <img
+                      src="images/profiles/alex.png"
+                      alt="User"
+                      class="post-user-img"
+                    />
+                    <div class="post-info">
+                      <h4 class="post-author">Alex Rivera</h4>
+                      <span class="post-time">Yesterday</span>
+                    </div>
+                    <div class="post-menu">
+                      <button class="post-menu-btn">
+                        <i class="uil uil-ellipsis-h"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="post-content">
+                    <p>
+                      Looking for team members for the upcoming Web3 Hackathon!
+                      Need a smart contract developer and a UX designer. The
+                      project idea is around decentralized identity
+                      verification. DM if interested!
+                    </p>
+                  </div>
+                  <div class="post-stats">
+                    <div class="stat-item likes">
+                      <i class="uil uil-heart"></i>
+                      <span>76</span>
+                    </div>
+                    <div class="stat-item comments">
+                      <i class="uil uil-comment"></i>
+                      <span>24</span>
+                    </div>
+                    <div class="stat-item shares">
+                      <i class="uil uil-share"></i>
+                      <span>12</span>
+                    </div>
+                  </div>
+                  <div class="post-actions-bottom">
+                    <button class="post-reaction-btn like-btn">
+                      <i class="uil uil-heart"></i>
+                      <span>Like</span>
+                    </button>
+                    <button class="post-reaction-btn comment-btn">
+                      <i class="uil uil-comment"></i>
+                      <span>Comment</span>
+                    </button>
+                    <button class="post-reaction-btn share-btn">
+                      <i class="uil uil-share"></i>
+                      <span>Share</span>
+                    </button>
+                  </div>
+                  <div class="comments-section">
+                    <div class="comment-input-container">
+                      <img
+                        src="images/profiles/profile-sarah.jpg"
+                        alt="Profile"
+                        class="comment-profile-img"
+                      />
+                      <div class="comment-input-wrapper">
+                        <input
+                          type="text"
+                          placeholder="Write a comment..."
+                          class="comment-input"
+                        />
+                      </div>
+                    </div>
+                    <div class="comments-list">
+                      <div class="comment">
+                        <img
+                          src="images/profiles/default.png"
+                          alt="User"
+                          class="comment-user-img"
+                        />
+                        <div class="comment-content">
+                          <div class="comment-header">
+                            <h5>Taylor Wilson</h5>
+                            <span>10 hours ago</span>
+                          </div>
+                          <p>
+                            I'm a UX designer with experience in Web3 projects.
+                            Would love to chat more about this!
+                          </p>
+                          <div class="comment-actions">
+                            <button class="comment-action-btn">Like</button>
+                            <button class="comment-action-btn">Reply</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-card">
+                  <div class="post-header">
+                    <img
+                      src="images/profiles/pioneers.png"
+                      alt="User"
+                      class="post-user-img"
+                    />
+                    <div class="post-info">
+                      <h4 class="post-author">Tech Pioneers Inc.</h4>
+                      <span class="post-time">3 days ago</span>
+                    </div>
+                    <div class="post-menu">
+                      <button class="post-menu-btn">
+                        <i class="uil uil-ellipsis-h"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="post-content">
+                    <p>
+                      We're excited to announce our Healthcare Innovation
+                      Hackathon! $50,000 in prizes for solutions that address
+                      accessibility in healthcare. Registration is now open!
+                    </p>
+                    <img
+                      src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800"
+                      alt="Healthcare hackathon"
+                      class="post-image"
+                    />
+                  </div>
+                  <div class="post-stats">
+                    <div class="stat-item likes">
+                      <i class="uil uil-heart"></i>
+                      <span>245</span>
+                    </div>
+                    <div class="stat-item comments">
+                      <i class="uil uil-comment"></i>
+                      <span>37</span>
+                    </div>
+                    <div class="stat-item shares">
+                      <i class="uil uil-share"></i>
+                      <span>89</span>
+                    </div>
+                  </div>
+                  <div class="post-actions-bottom">
+                    <button class="post-reaction-btn like-btn">
+                      <i class="uil uil-heart"></i>
+                      <span>Like</span>
+                    </button>
+                    <button class="post-reaction-btn comment-btn">
+                      <i class="uil uil-comment"></i>
+                      <span>Comment</span>
+                    </button>
+                    <button class="post-reaction-btn share-btn">
+                      <i class="uil uil-share"></i>
+                      <span>Share</span>
+                    </button>
+                  </div>
+                  <div class="comments-section">
+                    <div class="comment-input-container">
+                      <img
+                        src="images/profiles/profile-sarah.jpg"
+                        alt="Profile"
+                        class="comment-profile-img"
+                      />
+                      <div class="comment-input-wrapper">
+                        <input
+                          type="text"
+                          placeholder="Write a comment..."
+                          class="comment-input"
+                        />
+                      </div>
+                    </div>
+                    <div class="comments-list">
+                      <div class="comment">
+                        <img
+                          src="images/profiles/default.png"
+                          alt="User"
+                          class="comment-user-img"
+                        />
+                        <div class="comment-content">
+                          <div class="comment-header">
+                            <h5>James Cooper</h5>
+                            <span>2 days ago</span>
+                          </div>
+                          <p>
+                            This sounds amazing! Is there a maximum team size
+                            for this hackathon?
+                          </p>
+                          <div class="comment-actions">
+                            <button class="comment-action-btn">Like</button>
+                            <button class="comment-action-btn">Reply</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comment">
+                        <img
+                          src="images/profiles/pioneers.png"
+                          alt="User"
+                          class="comment-user-img"
+                        />
+                        <div class="comment-content">
+                          <div class="comment-header">
+                            <h5>Tech Pioneers Inc.</h5>
+                            <span>2 days ago</span>
+                          </div>
+                          <p>
+                            @James Cooper Teams can have up to 5 members.
+                            Looking forward to seeing you there!
+                          </p>
+                          <div class="comment-actions">
+                            <button class="comment-action-btn">Like</button>
+                            <button class="comment-action-btn">Reply</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="community-right">
+              <div class="community-card trending-card">
+                <h3>Trending Topics</h3>
+                <ul class="trending-list">
+                  <li class="trending-item">
+                    <span class="trending-tag">#AIHackathon</span>
+                    <span class="trending-count">2.5K posts</span>
+                  </li>
+                  <li class="trending-item">
+                    <span class="trending-tag">#Web3Development</span>
+                    <span class="trending-count">1.8K posts</span>
+                  </li>
+                  <li class="trending-item">
+                    <span class="trending-tag">#MachineLearning</span>
+                    <span class="trending-count">1.2K posts</span>
+                  </li>
+                  <li class="trending-item">
+                    <span class="trending-tag">#CloudComputing</span>
+                    <span class="trending-count">950 posts</span>
+                  </li>
+                  <li class="trending-item">
+                    <span class="trending-tag">#DevOps</span>
+                    <span class="trending-count">820 posts</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="community-card events-card">
+                <h3>Upcoming Events</h3>
+                <div class="mini-events-list">
+                  <div class="mini-event-item">
+                    <div class="event-date">
+                      <span class="event-day">15</span>
+                      <span class="event-month">June</span>
+                    </div>
+                    <div class="event-details">
+                      <h4>Global AI Innovation Challenge</h4>
+                      <p>London, UK + Online</p>
+                    </div>
+                  </div>
+                  <div class="mini-event-item">
+                    <div class="event-date">
+                      <span class="event-day">23</span>
+                      <span class="event-month">June</span>
+                    </div>
+                    <div class="event-details">
+                      <h4>Web3 Development Summit</h4>
+                      <p>Virtual Event</p>
+                    </div>
+                  </div>
+                  <div class="mini-event-item">
+                    <div class="event-date">
+                      <span class="event-day">07</span>
+                      <span class="event-month">July</span>
+                    </div>
+                    <div class="event-details">
+                      <h4>Healthcare Innovation Hackathon</h4>
+                      <p>Boston + Online</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="hackathons.html" class="view-all-events"
+                  >View All Events</a
+                >
+              </div>
+
+              <div class="community-card suggested-users-card">
+                <h3>People to Follow</h3>
+                <div class="suggested-users-list">
+                  <div class="suggested-user">
+                    <img
+                      src="images/profiles/default.png"
+                      alt="User"
+                      class="suggested-user-img"
+                    />
+                    <div class="suggested-user-info">
+                      <h4>Emma Watson</h4>
+                      <p>AI Researcher @ DeepMind</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                  </div>
+                  <div class="suggested-user">
+                    <img
+                      src="images/profiles/default.png"
+                      alt="User"
+                      class="suggested-user-img"
+                    />
+                    <div class="suggested-user-info">
+                      <h4>David Kim</h4>
+                      <p>Full Stack Developer</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                  </div>
+                  <div class="suggested-user">
+                    <img
+                      src="images/profiles/default.png"
+                      alt="User"
+                      class="suggested-user-img"
+                    />
+                    <div class="suggested-user-info">
+                      <h4>Sophia Martinez</h4>
+                      <p>UX Designer @ Google</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                  </div>
+                  <div class="suggested-user">
+                    <img
+                      src="images/profiles/pioneers.png"
+                      alt="User"
+                      class="suggested-user-img"
+                    />
+                    <div class="suggested-user-info">
+                      <h4>Tech Pioneers Inc.</h4>
+                      <p>Hackathon Organizer</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
     </div>
     <script src="script.js"></script>
+    <script src="community.js"></script>
   </body>
 </html>
